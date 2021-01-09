@@ -7,11 +7,15 @@ using System.Threading.Tasks;
 
 namespace Routing_Quest090121.Controllers
 {
-    [ApiController]
-    [Route("[controller]")]
-    public class HelloController : ControllerBase
+
+    public class HelloController 
     {
-        [HttpGet]
+       
+        public string Index()
+        {
+            return "Welcome Home Page";
+        }
+        
         public string SayHello()
         {
             return "SayHello!!";
